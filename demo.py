@@ -51,7 +51,7 @@ def main():
     # Initialize Google Sheet (demo mode)
     print("Initializing Google Sheet with headers...")
     cv_system.initialize_sheet('demo_spreadsheet_id')
-    print("✓ Sheet initialized with headers:", SHEET_HEADERS[:4], "...")
+    print("[OK] Sheet initialized with headers:", SHEET_HEADERS[:4], "...")
     
     # Create sample files
     print("\nCreating sample resume files...")
@@ -86,7 +86,7 @@ def main():
             .build())
     cv_system.receive_message(msg3)
     
-    print("\n✓ All 3 resumes received in message queue")
+    print("\n[OK] All 3 resumes received in message queue")
     
     print("\n" + "-"*70)
     print("STEP 2: PROCESSING MESSAGES AND EXTRACTING DATA")
@@ -116,7 +116,7 @@ def main():
     output_file = Path(__file__).parent / 'demo_results.json'
     print(f"Exporting results to {output_file}...")
     if cv_system.export_results(str(output_file)):
-        print(f"✓ Results exported successfully")
+        print(f"[OK] Results exported successfully")
     
     # Print detailed processing log
     print("\n" + "="*70)
@@ -135,11 +135,11 @@ def main():
     print("DEMO COMPLETED SUCCESSFULLY!")
     print("="*70)
     print("\nKey Achievements:")
-    print("  ✓ Simulated WhatsApp message reception")
-    print("  ✓ Processed multiple resume formats (text, file)")
-    print("  ✓ Extracted key candidate information using NLP")
-    print("  ✓ Stored data in structured format (Google Sheets)")
-    print("  ✓ Generated processing report and statistics")
+    print("  [OK] Simulated WhatsApp message reception")
+    print("  [OK] Processed multiple resume formats (text, file)")
+    print("  [OK] Extracted key candidate information using NLP")
+    print("  [OK] Stored data in structured format (Google Sheets)")
+    print("  [OK] Generated processing report and statistics")
     print("\nFor production use:")
     print("  - Set up real Google Sheets API credentials")
     print("  - Integrate with WhatsApp Business API or Twilio")
