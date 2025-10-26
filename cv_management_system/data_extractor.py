@@ -11,7 +11,8 @@ class ResumeDataExtractor:
     def __init__(self):
         """Initialize the extractor with regex patterns"""
         self.email_pattern = r'[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}'
-        self.phone_pattern = r'(?:\+?91[-.\s]?)?(?:[0-9]{3}[-.\s]?){2}[0-9]{4}|(?:\+?1[-.\s]?)?(?:[0-9]{3}[-.\s]?){2}[0-9]{4}'
+        # Simplified phone pattern to avoid regex issues
+        self.phone_pattern = r'[\+]?[0-9\-\.\s]{10,}'
         self.name_pattern = r'([A-Z][a-z]+ [A-Z][a-z]+|[A-Z][a-z]+)'
         
     def extract_email(self, text: str) -> Optional[str]:
@@ -62,7 +63,8 @@ class ResumeDataExtractor:
         ]
         
         for skill in skill_keywords:
-            if re.search(r'\b' + skill + r'\b', text, re.IGNORECASE):
+            # Simple string search instead of regex to avoid special character issues
+            if skill.lower() in text.lower():
                 skills.append(skill)
         
         return ', '.join(skills) if skills else 'Not specified'

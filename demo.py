@@ -10,7 +10,8 @@ import sys
 from pathlib import Path
 
 # Add the cv_management_system module to path
-sys.path.insert(0, os.path.join(os.path.dirname(__file__), 'cv_management_system'))
+current_dir = os.path.dirname(__file__)
+sys.path.insert(0, os.path.join(current_dir, 'cv_management_system'))
 
 from cv_manager import CVManagementSystem
 from whatsapp_simulator import WhatsAppMessageBuilder

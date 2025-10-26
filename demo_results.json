@@ -1,0 +1,50 @@
+{
+  "summary": {
+    "total_processed": 3,
+    "successful": 0,
+    "partial_success": 0,
+    "failed": 3,
+    "candidates_extracted": 0,
+    "whatsapp_stats": {
+      "pending_messages": 0,
+      "processed_messages": 3,
+      "total_messages": 3
+    }
+  },
+  "candidates": [],
+  "processing_log": [
+    {
+      "status": "failed",
+      "sender": "John Smith",
+      "timestamp": "2025-10-26T19:06:24.646083",
+      "message_content": "\nJOHN SMITH\njohn.smith@email.com | +91-9876543210\n\nPROFESSIONAL SUMMARY\nExperienced Software Engineer with 5+ years of expertise in full-stack development and cloud technologies.\nStrong background in building scalable web applications and leading technical teams.\n\nEDUCATION\nB.Tech in Computer Science - Indian Institute of Technology (IIT) Delhi, 2018\nCGPA: 8.5/10\n\nSKILLS\nProgramming Languages: Python, Java, JavaScript, C++\nWeb Technologies: HTML, CSS, React, Angular, Node.js\nDatabases: MySQL, PostgreSQL, MongoDB\nCloud & DevOps: AWS, Docker, Kubernetes, Jenkins\nOther: Git, REST API, GraphQL, Machine Learning\n\nEXPERIENCE\nSenior Software Engineer - TechCorp Solutions (2021 - Present)\n- Led development of microservices architecture serving 1M+ users\n- Implemented CI/CD pipeline reducing deployment time by 60%\n- Mentored 5+ junior developers\n\nSoftware Engineer - WebDev Inc. (2019 - 2021)\n- Developed full-stack web applications using React and Django\n- Optimized database queries improving performance by 40%\n\nJunior Developer - StartupXYZ (2018 - 2019)\n- Built REST APIs using Flask and Node.js\n- Contributed to frontend development using React\n\nCERTIFICATIONS\nAWS Certified Solutions Architect - Professional\nDocker Certified Associate\n",
+      "extracted_data": null,
+      "sheet_upload": false,
+      "errors": [
+        "multiple repeat at position 4"
+      ]
+    },
+    {
+      "status": "failed",
+      "sender": "Sarah Johnson",
+      "timestamp": "2025-10-26T19:06:24.646592",
+      "message_content": "\nSarah Johnson\nsarah.johnson@example.com\nPhone: +1-415-555-0123\n\nOBJECTIVE\nTo secure a challenging position as a Data Scientist where I can leverage my expertise in\nmachine learning and statistical analysis to drive business insights and innovation.\n\nEDUCATION\nMaster of Science in Data Science - University of California, Berkeley (2021)\nBachelor of Science in Statistics - Stanford University (2019)\n\nTECHNICAL SKILLS\nLanguages: Python, R, SQL, Java\nData Analysis: Pandas, NumPy, SciPy, Scikit-learn\nMachine Learning: TensorFlow, PyTorch, XGBoost\nCloud Platforms: AWS, Google Cloud Platform, Azure\nData Visualization: Tableau, Matplotlib, Seaborn\nDatabases: PostgreSQL, MongoDB, Cassandra\nTools: Jupyter, Git, Apache Spark\n\nPROFESSIONAL EXPERIENCE\nSenior Data Scientist - Google (2021 - Present)\n- Built machine learning models for recommendation engine\n- Analyzed user behavior patterns affecting 100M+ users\n- Published research in top-tier ML conferences\n\nData Analyst - Facebook (2020 - 2021)\n- Conducted A/B tests and statistical analysis\n- Developed dashboards and metrics for product teams\n\nResearch Assistant - UC Berkeley (2019 - 2021)\n- Worked on NLP and deep learning research projects\n\nCERTIFICATIONS\n- TensorFlow Developer Certificate\n- Advanced SQL Certification\n",
+      "extracted_data": null,
+      "sheet_upload": false,
+      "errors": [
+        "multiple repeat at position 4"
+      ]
+    },
+    {
+      "status": "failed",
+      "sender": "Priya Sharma",
+      "timestamp": "2025-10-26T19:06:24.646592",
+      "message_content": "\nName: Rajesh Kumar\nEmail: rajesh.kumar@domain.com\nContact: +91-9988776655\n\nHello, I'm Rajesh Kumar, a recent graduate with a B.Tech in Computer Science.\nI have experience with Python, Java, and web development technologies.\n\nEducation:\n- B.Tech Computer Science from Delhi Institute of Technology (2023)\n- 12th Grade - CBSE Board (2019)\n\nSkills:\nI am proficient in Python, JavaScript, and Java programming languages.\nI have worked with Flask and Django frameworks for web development.\nI am familiar with SQL and have used MySQL and PostgreSQL databases.\nI have basic knowledge of AWS and containerization with Docker.\n\nExperience:\nI completed my 6-month internship at a software company where I worked on web development projects.\nDuring my internship, I developed 3 projects using Django and React.\nI have contributed to open-source projects on GitHub.\nI am a quick learner and always eager to learn new technologies.\n",
+      "extracted_data": null,
+      "sheet_upload": false,
+      "errors": [
+        "multiple repeat at position 4"
+      ]
+    }
+  ]
+}
